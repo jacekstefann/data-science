@@ -46,3 +46,16 @@ df1$l[1]
 df1$l>3000
 df1$f[df1$l>3000]
 df1[df1$l>3000,]
+
+
+#prosterze odpytania dfa
+df1
+subset(df1, subset = l < 3000, select = c(f, l))
+
+#do odpytywania mozna tez uzyc pakietu dplyr
+library("dplyr")       
+
+df1 %>% filter(l<3000)
+
+
+
