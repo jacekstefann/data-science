@@ -48,8 +48,7 @@ print(months["pl"][4])
 
 # zad 3
 
-keys = {'M', 'a', 'r', 'i', 'a', 'n', 'n', 'a' }
-
-vowels = dict.fromkeys(keys, 1)
-print(vowels)
+slowo = 'Marianna'
+test = dict.fromkeys(slowo, 1)
+print(test)
 

@@ -50,4 +50,76 @@ druga_polowa = l[polowa:]
 print(pierwsza_polowa)
 print(druga_polowa)
 
+# wywolanie metody na instancji
+'Marianna'.lower()
+
+# wywolanie metody na klasie
+# str.lower()
+
+d = 'Marianna'
+'Marianna'.lower()
+str.lower(d)
+
+
+#  KROTKA
+# zbior wartosci
+# definicja krotki
+krotka = (1, 2, 3, 'jacek', 'ma')
+# wybranie elementu
+krotka[0]
+# przypisanie wartosci
+# krotka[0]=3
+# zmieniam krotka na liste
+lista_z_krotki = list(krotka)
+# zmienaim liste na krotke
+krotka = tuple(lista_z_krotki)
+
+# pokazanie w ktorej komorce pamieci jest krotka/obiekt 
+enumerate(krotka)
+# zwraca wartosc i indeks 
+print(list(enumerate(krotka))[0])
+
+for litera in enumerate("Ala"):
+    print(litera)
+
+# enumerate zwraca krotke indeks i wartosc elementu
+# enumerate pozwala okreslic od ktorego miejsca ma zaczac indeksowac
+
+for litera in enumerate("Ala", start=1):
+    print(litera)
+
+# pakowanie krotki
+# rozpakowywanie do zmiennych
+
+# pakowanie krotki
+t = 5, 6, 7
+print(t)
+
+x, y, z = t
+print(t)
+
+for zmienna, wartosc in enumerate("Ala", start=1):
+    print('Element o id {} = {}'.format(zmienna, wartosc))
+
+# pakowania krotki jednoelementowej
+t = 5, 6, 7
+print(t)
+
+# rozpakowywanie krotki
+x, y, z = t
+print(t)
+*x, y = krotka
+print(x, y)
+
+*x, = krotka
+print(x)
+
+x, *y = krotka
+print(x, y)
+
+# tutaj otrzymamy krotke 2 elementowa
+krot = lista('Ala'),
+# tuaj dostaniemy krotke 3 elementowa - elementy zostaną rozpakowane jako osobne
+# elementy krotki czyli beda 2 liczy i 1 lista 1 elementowa
+krot = tuple([1,2 [3]])
 
