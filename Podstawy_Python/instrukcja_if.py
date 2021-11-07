@@ -32,6 +32,10 @@ if __name__ == '__main__':
     pass
 
 
-
+import sys
+# read line zachowuje tez np. przejscie do nowej linii \n czego juz nie przechowuje 
+# print
+wejscie = sys.stdin.readline()
+sys.stdout.write("dasdasdasda")
 
 
