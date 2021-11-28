@@ -23,7 +23,7 @@ c=np.array(a[:2,1:3]) # tutaj towrzymy nowa macierz - jak zmienimy c to nie zmie
 
 # poprzez copy() mozna tworzyc kopie
 
-a1[1,-5] #jak chce pobrac element od prawej strony i przekrocze zakres to dostane pusta macierz 
+a[1,-5] #jak chce pobrac element od prawej strony i przekrocze zakres to dostane pusta macierz 
 # i nie dostajemy błedu
 
 # wektor:
