@@ -1,5 +1,6 @@
 # numpy
 import numpy as np
+from numpy.core.fromnumeric import reshape
 
 
 ll = [1, 2, 3, 4, 5]
@@ -53,3 +54,66 @@ print(a6)
 a7 = np.random.random((2,3))
 print(a7)
 
+vv =  np.array([np.arange(0,10,step=2), np.arange(10,20,step=2)])
+print(vv)
+
+
+# macierz 3d
+
+b1 = np.array([ 
+                [ [1, 2], [3, 4], [5, 6] ],
+                [ [11, 12], [13, 14], [15, 16] ],
+                [ [21, 22], [23, 24], [25, 26] ],
+                [ [31, 32], [33, 34], [35, 36] ],
+              ])
+
+print(b1.shape)
+
+a2 = np.arange(12)
+
+# reshape - kompresuje macierz - zmienia jego wymiar
+
+a2 = a2.reshape(3,4)
+
+print(a2)
+
+# dopbieranie sie do elementow macierzy
+a2[0,0]
+
+# a[wiersze, kolumny] wymiary liczymy od 0
+print(a2[2,3])
+
+# a2[0,:] - z wiersza 0 zwroc wszystko
+# a2[0] - wiersz zerowy alternatywa dla powyzszej
+
+# a2[:,1] - wszystko z 2 kolumny
+
+a2[:,1].reshape(3,1)  
+
+wiersze, kolumny = a2.shape
+
+wiersze 
+
+kolumny
+
+a2[:,1].reshape(wiersze,1)  
+
+print(b1)
+
+print(b1[0,0,0])
+
+print(b1[3,2,1])
+
+# pobierac elementy mozna tez od konca
+# a2[0,-1]
+
+# zabieranie elementow z kolumn z przedzialu
+# a2[-1, 1:-2]
+
+# a2[1, [1,3]] - podawanie wektora do zbierania konkretnych danych 2 kolumna element 2 i 4
+ 
+b1[0] # pobieramy 1 macierz 
+#  alternatywa: b1[0, :, :]
+
+b1[:, 0, :]
+b1[:, :, 0]
